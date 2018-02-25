@@ -1,0 +1,137 @@
+body{
+	margin: 0;
+	padding: 0;
+	color: white;
+	background-color: lightgray;
+	font-size: 2.5vmin;
+}
+a{
+	color: white;
+	text-decoration: none;
+    padding: 1em;
+    font-size: 1.1vmax;
+}
+a:hover{
+	text-decoration: none;
+}
+nav{
+	display: flex;
+	flex-direction: row;
+	background-color:
+
+}
+nav div:nth-of-type(1){
+	width: 65%;
+}
+nav div{
+	margin: 0.5em 0;
+}
+nav div:nth-of-type(2),div:nth-of-type(3){
+	padding-top: 0.75em;
+}
+nav div:nth-of-type(3){
+	border: white 1px solid;
+	border-radius: 5px;
+}
+.sign{
+	border: 1px white solid;
+}
+a{
+	text-decoration: none;
+}
+/*navigation part ends here*/
+h3{
+	color: #00a2e2;
+}
+.hero{
+	background-image: url("/home/sreekar/Desktop/Infoware_Project/images/home-hero.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 10%;
+}
+.two{
+	background-image: url("/home/sreekar/Desktop/Infoware_Project/images/sb-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 5%;
+}
+.two h2{
+  color: white;
+  font-size: 6vmin;
+}
+.two p{
+	width: 80%;
+	font-size: 3.5vmin;
+	margin-left: 10%;
+}
+.container{
+	margin: 0 auto;
+	background-color: white;
+	text-align: center;
+	padding: 3%;
+	width: 70%
+
+}
+.container button{
+	background-color: #ff8330;
+	margin:0.5em;
+}
+.container h3{
+	font-size: 2.5em;
+}
+.container p{
+	color:#777777;
+    font-size: 1.125rem;
+}
+form{
+	text-align: left;
+	color:#777777;
+}
+form input{
+	margin-left: 1em;
+}
+form button{
+  width: 15%;
+  margin-left: 0.5em;
+}
+input::placeholer{
+	opacity: 1;
+}
+
+.icon{
+	width: 130px;
+	height: 130px;
+}
+.devices{
+	width: 100%;
+}
+.subjects{
+	text-align: center;
+}
+.form-control{
+	display: inline-block;
+	width: 35%;
+}
+.control-block{
+	padding: 1em;
+	background-color: white;
+	margin-bottom: 1em;
+}
+.control-block a{
+	color: black;
+	margin-left: 3em;
+	padding:1.1em 0em; 
+	text-decoration: none;
+}
+.control-block a:hover{
+	border-bottom: 2px solid black;
+
+}
+.row{
+	width: 90%;
+	margin-left: 5%;
+}
+.scroll{
+	background-color: #00a2e2;
+}
