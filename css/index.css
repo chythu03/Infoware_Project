@@ -50,7 +50,7 @@ nav div:nth-of-type(2) div a {
 /* end of navigation bar controls*/
 
 .hero{
-	background-image: url("/home/sreekar/Desktop/Infoware_Project/images/home-hero.jpg");
+	background-image: url("../images/home-hero.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -129,7 +129,7 @@ h3{
 
 
 .two{
-	background-image: url("/home/sreekar/Desktop/Infoware_Project/images/sb-bg.jpg");
+	background-image: url("../images/sb-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
