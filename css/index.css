@@ -1,40 +1,123 @@
 body{
 	margin: 0;
 	padding: 0;
-	color: white;
-	background-color: lightgray;
-	font-size: 2.5vmin;
+	background-color: white;
+	font-family: Open Sans, Helvetica Neue, Arial, sans-serif;
 }
-a{
-	color: white;
+body a{
 	text-decoration: none;
     padding: 1em;
-    font-size: 1.1vmax;
 }
 a:hover{
 	text-decoration: none;
+	background-color: rgba(255,255,255,0.2);
 }
+/*navigation bar controls*/
 nav{
 	display: flex;
 	flex-direction: row;
 	background-color:
-
 }
-nav div:nth-of-type(1){
-	width: 65%;
+.logo{
+	width: 20%;
 }
-nav div{
-	margin: 0.5em 0;
+.logo_width{
+	width: 15%;
 }
-nav div:nth-of-type(2),div:nth-of-type(3){
-	padding-top: 0.75em;
+nav div:nth-of-type(2){
+	width: 80%;
+	display: inline-flex;
+	justify-content: flex-end;
+	padding: 1em;
+	
 }
-nav div:nth-of-type(3){
+nav div:nth-of-type(2) div a {
+  color: white;
+}
+.sign{
 	border: white 1px solid;
 	border-radius: 5px;
 }
-.sign{
-	border: 1px white solid;
+.get_started_scroll{
+	background-color: rgb(255, 158, 48);
+    border-radius: 5px;
+}
+.get_started{
+  display: none;
+  background-color: rgb(255, 158, 48);
+  border-radius: 5px;
+}
+/* end of navigation bar controls*/
+
+.hero{
+	background-image: url("/home/sreekar/Desktop/Infoware_Project/images/home-hero.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* contanier within hero*/
+.container{
+	background-color: white;
+	text-align: center;
+	padding: 3%;
+}
+.container button{
+	background-color: #ff8330;
+	margin:0.5em;
+}
+.container h3{`
+	font-size: 2.0em;
+}
+.container p{
+	color:#777777;
+    font-size: 1.0em;
+}
+
+/* end for container within hero*/
+@media(min-width: 650px){
+.fa-bars{
+	display: none;
+}
+.hero{
+	padding: 10%;
+}
+.container{
+	width: 70%
+}
+.form-control{
+	display: inline-block;
+	font-size: 0.8em;
+	max-width: 30%;
+}
+}
+@media(max-width: 875px){
+	.get_started_scroll
+	{
+      display: none;
+    }
+}
+
+@media(max-width: 675px){
+	nav div:nth-of-type(2) div{
+    display: none;
+    }
+    .hero{
+    	padding: 30% 2.5%;
+    }
+    .fa-bars{
+    	display: flex;
+    }
+    .fixed-top{
+    background-color: #00a2e2;
+    }
+    .container{
+	width: 100%
+    }
+    .form-control{
+    margin: 0 auto;	
+	font-size: 0.8em;
+	max-width: 60%;
+}
 }
 a{
 	text-decoration: none;
@@ -43,12 +126,8 @@ a{
 h3{
 	color: #00a2e2;
 }
-.hero{
-	background-image: url("/home/sreekar/Desktop/Infoware_Project/images/home-hero.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 10%;
-}
+
+
 .two{
 	background-image: url("/home/sreekar/Desktop/Infoware_Project/images/sb-bg.jpg");
     background-size: cover;
@@ -63,65 +142,30 @@ h3{
 .two p{
 	width: 80%;
 	font-size: 3.5vmin;
+	color: white;
 	margin-left: 10%;
 }
-.container{
-	margin: 0 auto;
-	background-color: white;
-	text-align: center;
-	padding: 3%;
-	width: 70%
 
-}
-.container button{
-	background-color: #ff8330;
-	margin:0.5em;
-}
-.container h3{
-	font-size: 2.5em;
-}
-.container p{
-	color:#777777;
-    font-size: 1.125rem;
-}
-form{
-	text-align: left;
-	color:#777777;
-}
-form input{
-	margin-left: 1em;
-}
-form button{
-  width: 15%;
-  margin-left: 0.5em;
-}
-input::placeholer{
-	opacity: 1;
-}
 
 .icon{
 	width: 130px;
 	height: 130px;
+	float: left;
 }
 .devices{
 	width: 100%;
 }
-.subjects{
-	text-align: center;
-}
-.form-control{
-	display: inline-block;
-	width: 35%;
-}
+
+
 .control-block{
-	padding: 1em;
 	background-color: white;
 	margin-bottom: 1em;
+	display: flex;
+	justify-content: center;
 }
 .control-block a{
 	color: black;
-	margin-left: 3em;
-	padding:1.1em 0em; 
+	margin-left: 2%;
 	text-decoration: none;
 }
 .control-block a:hover{
@@ -130,8 +174,102 @@ input::placeholer{
 }
 .row{
 	width: 90%;
-	margin-left: 5%;
+	margin:0 auto;
 }
+
+@media(max-width: 575px){
+	.row{
+		padding: 10%;
+	}
+}
+
+.card{
+	height: 260px;
+}
+
+
+
+
+.four{
+	background-color: white;
+	margin-top: 0;
+}
+.four .row{
+  width: 100%;
+}
+.block{
+ padding: 5%;
+}
+.block h2{
+	margin-top: 0.5em;
+}
+.last_block p{
+	margin-top: 2em;
+}
+@media(max-width: 575px){
+	.block p,h2{
+		font-size: 1em;
+	}
+	.block h2{
+		font-weight: bold;
+	}
+}
+@media(max-width: 468px){
+		.block p,h2{
+		font-size: 0.70em;
+	}
+}
+
+
+
+
+
+footer{
+  background-color: white;
+  color: rgb(92, 92, 98);
+  padding-left: 5%;
+}
+footer .row{
+  width: 100%;
+}
+.footer_links,.footer_down{
+	display: flex;
+	flex-direction: row;
+	color: #5c5c62;
+}
+
+.footer_links div:nth-of-type(2){
+	margin-left: 10%;
+}
+.footer_links div ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer_down p{
+	margin-right: 5%;
+}
+.footer_down span{
+	margin-left: 1em;
+}
+.footer_copyright{
+	margin-top: 2%;
+	padding: 3%;
+}
+@media(min-width: 575px){
+	.footer_copyright{
+	   border-top: 1px solid lightgray;
+	}
+}
+@media(max-width: 665px){
+	.footer_off_display{
+		display: none;
+	}
+}
+
+
+
+
 .scroll{
 	background-color: #00a2e2;
 }
