@@ -196,8 +196,45 @@ h3{
 
 .card{
 	height: 260px;
-	    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	border-top: 2px solid;
+    border-radius: 3px;
 }
+.card:nth-of-type(1){
+	border-top-color: #00a2e2;
+}
+.card:nth-of-type(2){
+	border-top-color:#79eaac;
+}
+.card:nth-of-type(3){
+	border-top-color: #ffae00;
+}
+.card:nth-of-type(4){
+	border-top-color:#bd76b9;
+}.card:nth-of-type(5){
+	border-top-color: #f54242;;
+}
+.card:nth-of-type(6){
+	border-top-color:#efaceb;
+}
+.card:nth-of-type(7){
+	border-top-color:#00a2e2;;
+}
+.card:nth-of-type(8){
+	background-image: url("../images/poly-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-top-width: 0;
+	color: white;
+	font-weight: bolder;
+	text-align: center;
+	padding:2em 2.5em; 
+	font-size: 1.2em;
+}
+.card:nth-of-type(8) p:nth-of-type(2){
+		font-size: 1.4em;
+}
+
 @media(min-width: 992px){
 	.card:nth-of-type(1){
 	position: relative;
