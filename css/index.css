@@ -58,24 +58,6 @@ ul{
 	margin:  0;
     padding: 0;
 }
-.AboutUS_drop_down ul li{
-	padding: 0.8em 0.75em;
-	font-size: 0.9em;
-}
-.AboutUS_drop_down{
-	display: none;
-	margin: 0.8em 0;
-	width:8.5%;
-	position:absolute;
-	top: 70%;
-	left: 62.5vw;
-	background-color: white;
-	z-index: 1000;	
-}
-.AboutUS_drop_down ul li:hover{
-	width: 100%;
-    background-color: rgba(0,0,0,0.05);
-}
 /* end of navigation bar controls*/
 
 .hero{
@@ -214,6 +196,7 @@ h3{
 
 .card{
 	height: 260px;
+	    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 @media(min-width: 992px){
 	.card:nth-of-type(1){
